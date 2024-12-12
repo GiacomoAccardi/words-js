@@ -6,11 +6,13 @@
     <title>Words-js</title>
     <!-- importo foglio di stile -->
     <link rel="stylesheet" href="./styles/generals.css">
+    <!-- importo fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <!--Questa sezione conterrà l'header + la barra degli strumenti-->
+        <!--Questa sezione conterrà l'header + menu + tool menu-->
         <h1>Words-js</h1>
 
         <ul>
@@ -22,11 +24,50 @@
             </li>
         </ul>
 
+        <div id="tool-submenu" class="hidden">
+            <div id="size-menu" class="hidden">
+                <div id="size-small" class="menu-bt">Small</div>
+                <div id="size-default" class="menu-bt">Default</div>
+                <div id="size-big" class="menu-bt">Big</div>
+            </div>
+            <div id="align-menu" class="hidden">
+                <div id="align-l" class="menu-bt">
+                    <i class="fa-solid fa-align-left"></i>
+                </div>
+                <div id="align-cntr" class="menu-bt">
+                    <i class="fa-solid fa-align-justify"></i>
+                </div>
+                <div id="align-r" class="menu-bt">
+                    <i class="fa-solid fa-align-right"></i>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
         <div id="app-wrap"></div>
-        <div id="tool-bar" class=""></div>
+        <div id="tool-bar" class="">
+            <div id="f-size" class="tool-btn">
+                <i class="fa-solid fa-text-height"></i>
+                <span>Size</span>
+            </div>
+            <div id="f-bold" class="tool-btn">
+                <i class="fa-solid fa-bold"></i>
+                <span>Bold</span>
+            </div>
+            <div id="f-italic" class="tool-btn">
+                <i class="fa-solid fa-italic"></i>
+                <span>Italic</span>
+            </div>
+            <div id="f-underline" class="tool-btn">
+                <i class="fa-solid fa-underline"></i>
+                <span>U-line</span>
+            </div>
+            <div id="f-align" class="tool-btn">
+                <i class="fa-solid fa-align-justify"></i>
+                <span>Align</span>
+            </div>
+        </div>
     </main>
 
     <!-- importo script -->
